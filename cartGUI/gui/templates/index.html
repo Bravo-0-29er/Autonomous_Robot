@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Shopping Cart Controller</title>
+        <style>
+            /** Positions will need adjusting for onboard lcd**/
+            h1, h2 {text-align: center;}
+            
+            button[name="stop"]{display: inline; position:relative; left: 40vw;}
+            button[name="start"]{display: inline; position: relative; left: 46vw;}
+            
+            button[name="forward"] {display:block; margin-top: 2vh; margin-left: auto; margin-right: auto; margin-bottom: 2vh;}
+            button[name="back"] {display:block; margin-top: 2vh; margin-left: auto; margin-right: auto; margin-bottom: 2vh;}
+            button[name="right"] {display: inline; position: relative; left: 40vw;}
+            button[name="left"]{display: inline; position: relative; left: 46vw;}
+            
+            button[name="dismiss"]{display:block; margin-top: 2vh; margin-left: auto; margin-right: auto; margin-bottom: 2vh;}
+        </style>
+    </head>
+    <body>
+        
+        <h1>Shopping Cart Operation</h1>
+        
+        <h2>Autonomous Movement Controls</h2>
+        <button name="stop" onclick="StopAuto()">Stop</button>
+        <button name="start" onclick="StartAuto()">Restart</button>
+        
+        <h2>Movement Controls</h2>
+        <button name="forward" onclick="MoveForward()">Forward</button>
+        <button name="right" onclick="MoveRight()">Right</button>
+        <button name="left" onclick="MoveLeft()">Left</button>
+        <button name="back" onclick="MoveBack()">Backward</button>
+
+        <h2>Dismiss Cart to Holding Station</h2>
+        <button name="dismiss" onclick="Dismiss()">Dismiss</button>
+
+    </body>
+</html>
